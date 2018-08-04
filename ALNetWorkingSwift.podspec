@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ALNetWorkingSwift'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = '利用Alamofire进行再度封装网络库'
 
 # This description is used to generate tags and improve search results.
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-                          利用Alamofire进行再度封装，以适合日常需求
+                          利用Alamofire和HandyJSON进行再度封装，以适合日常需求
                          DESC
 
   s.homepage         = 'https://github.com/Anyeler/ALNetWorkingSwift'
@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
   s.module_name      = 'ALNetWorking'
   s.platform         = :ios, '8.0'
-  # s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '8.0'
 
   s.source_files = 'ALNetWorkingSwift/Classes/*.swift'
   s.requires_arc = true
