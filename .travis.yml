@@ -4,11 +4,19 @@
 
 osx_image: xcode9.4
 language: objective-c
-# cache: cocoapods
-# podfile: Example/Podfile
+cache: cocoapods
+podfile: Example/Podfile
+
+env:
+  global:
+    - WORKSPACE=ALNetWorkingSwift.xcworkspace
+    - IOS_FRAMEWORK_SCHEME="ALNetWorkingSwift iOS"
+    - IOS_SDK=iphonesimulator11.0
+    - OSX_SDK=macosx10.12
+
 before_install:
-- gem install cocoapods # Since Travis is not always on latest version
+- gem install xcpretty --no-rdoc --no-ri --no-document --quiet
 - pod install --project-directory=Example
 script:
-- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/ALNetWorkingSwift.xcworkspace -scheme ALNetWorkingSwift-Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
+- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/ALNetWorkingSwift.xcworkspace -scheme ALNetWorkingSwift-Example -sdk iphonesimulator11.0 ONLY_ACTIVE_ARCH=NO | xcpretty
 - pod lib lint
