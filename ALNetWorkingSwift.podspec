@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ALNetWorkingSwift'
-  s.version          = '0.2.0'
+  s.version          = '0.2.1'
   s.summary          = '利用Alamofire进行再度封装网络库'
 
 # This description is used to generate tags and improve search results.
