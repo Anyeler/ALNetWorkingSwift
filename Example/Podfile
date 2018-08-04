@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ALNetWorkingSwift_Example' do
+  pod 'ALNetWorkingSwift', :path => '../'
+
+  target 'ALNetWorkingSwift_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
