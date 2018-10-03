@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ALNetWorkingSwift'
-  s.version          = '0.3.0'
+  s.version          = '0.4.0'
   s.summary          = '利用Alamofire进行再度封装网络库'
 
 # This description is used to generate tags and improve search results.
@@ -42,8 +42,8 @@ Pod::Spec.new do |s|
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
   
-  s.dependency "Alamofire", '4.7.2'
-  s.dependency "HandyJSON", '4.1.1'
+  s.dependency "Alamofire", '4.7.3'
+  s.dependency "HandyJSON", '4.2.0'
 
   s.subspec 'Core' do |ba|
     ba.source_files = 'ALNetWorkingSwift/Classes/Core/*.swift'
