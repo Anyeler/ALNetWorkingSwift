@@ -37,7 +37,7 @@ open class ALNetHTTPRequestParameter {
     //添加扩展参数
     open var extenParam: [String:Any] = [String:Any]()
     
-    open static let share: ALNetHTTPRequestParameter = {
+    public static let share: ALNetHTTPRequestParameter = {
         return ALNetHTTPRequestParameter()
     }()
     

@@ -32,7 +32,7 @@ open class ALHTTPRequestOperationManager {
     }
     
     // 单例
-    open static let `default`: ALHTTPRequestOperationManager = {
+    public static let `default`: ALHTTPRequestOperationManager = {
         return ALHTTPRequestOperationManager(config: ALCommonConfig())
     }()
     
